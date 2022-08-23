@@ -66,13 +66,10 @@ nav {
 	box-sizing: border-box;
 }
 
-html, body {
-	background: #fff;
-}
 
 body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-	margin-left:75px;
+	margin-left:95px;
 	/* margin-right:75px; */
 }
 
@@ -95,11 +92,13 @@ p {
 }
 
 img {
-	width:240px;
+	width:200px;
 	border-radius: 10px;
 }
 
-/** page layout **/
+
+
+/* * page layout **/
 main {
 	display: grid;
 	grid-template-columns: 1fr 15em;
@@ -118,36 +117,95 @@ section {
   justify-content: space-between;
 }
 
-.introduction-column {
+/* .introduction-column {
   display: flex;
   float: left;
   text-align: left;
   width: 50%;
   padding: 5px;
 	border-right: 1px solid #555555;
-}
+} */
 
-.fact-column {
+/* .fact-column {
   display: flex;
   float: right;
   text-align: left;
   width: 50%;
   padding: 10px;
-}
+} */
 
-.facts {
+/* .facts {
 	margin-left:20px;
 	margin-right:20px;
 	padding:20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	text-align:center;
 	border-radius:5px;
-}
+} */
 
 .education {
 	margin-top:10px;
 	margin-bottom:10px;
 	float:left;
+}
+
+
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+
+.div-dot:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -9px;
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background-color: #8BA694;
+	border: 1px solid rgb(48,49,51);
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 2px white,
+					0 0 0 4px white;
+}
+.div-dot-bullet:after
+{
+	content: "";
+	position: absolute;
+	/* z-index: 1; */
+	/* top: -9px; */
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background-color: #8BA694;
+	border: 1px solid rgb(48,49,51);
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 2px white,
+					0 0 0 4px white;
+}
+
+.divider-bullet
+{
+	position: relative;
+	/* margin-top: 90px; */
+	height: 1px;
 }
 
 
